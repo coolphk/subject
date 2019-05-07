@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Navigator style="margin-top:50px;"></Navigator>
+    <Navigator></Navigator>
   </div>
 </template>
 
