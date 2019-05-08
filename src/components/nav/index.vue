@@ -133,7 +133,7 @@ export default {
   main {
     width: 88vw;
     height: 80vh;
-    background:white;
+    background:rgba(255,255,255,0.8);
     box-shadow: 1vw 1vw 0.5vw .5vw rgba(0, 0, 0, .8)
   }
 }
