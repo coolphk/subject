@@ -11,7 +11,26 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path: 'xianqing',
+          name: 'xianqing',
+          component: () => import('./components/tabs/xianqing.vue')
+        },
+        {
+          path: "/shenghuo",
+          desc: "生活馆介绍"
+        },
+        {
+          path: "/weather",
+          desc: "天气预报"
+        },
+        {
+          path: "/knowledge",
+          desc: "知识测试"
+        }
+      ]
     }
   ]
 })

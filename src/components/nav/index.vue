@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="nav">
       <div class="title">
         <span class="back">返回首页</span>
@@ -8,20 +8,25 @@
         <ul>
           <li
             v-for="(item,index) in tabs"
-            :key="item"
+            :key="index"
             :id="'li'+index"
-            :class="index=='0'?'active':''"
             @click="changeActive"
-          >{{ item }}</li>
+            :class="{activie:index==0}"
+          >
+            <router-link :to="item.path"> {{ item.desc }}</router-link>
+          </li>
         </ul>
         <div
-          ref="indicator"
           class="indicator"
           :style="indicator"
         ></div>
       </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <main>
+        <router-view />
+      </main>
+    </div>
   </div>
 </template>
 
@@ -36,21 +41,26 @@ export default {
       },
       initWidth: 0,
       initLeft: 0,
-      tabs: ["县情介绍", "生活馆介绍", "天气预报", "知识测试"]
+      tabs: [
+        { path: "/xianqing", desc: "县情介绍" },
+        { path: "/shenghuo", desc: "生活馆介绍" },
+        { path: "/weather", desc: "天气预报" },
+        { path: "/knowledge", desc: "知识测试" }
+      ]
     };
   },
   methods: {
     changeActive(e) {
-      this.setIndicator(e.target.offsetWidth,e.target.offsetLeft);
+      this.setIndicator(e.target.offsetWidth, e.target.offsetLeft);
     },
     init() {
       //初始化指示器的坐标位置
-      var firstTab = document.getElementsByClassName("active")[0];
+      let firstTab = document.querySelectorAll("li")[0];
       this.setIndicator(firstTab.offsetWidth, firstTab.offsetLeft);
     },
     setIndicator(width, left) {
-      this.indicator.width = width + "px";
-      this.indicator.left = left + "px";
+      this.indicator.width = width + 8 + "px";
+      this.indicator.left = left - 4 + "px";
     }
   },
   mounted() {
@@ -60,13 +70,18 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+}
 .nav {
   width: 100vw;
-  height: 15.333vw;
+  // height: 9vh;
+  flex: 1;
   background: rgba(230, 39, 39, 0.171);
-  box-shadow: 0px 0px 5px 3px rgba(114, 91, 91, 0.4);
+  box-shadow: 0 0 0.5vh 0.2vh rgba(114, 91, 91, 0.6);
   display: flex;
-  margin-top: 0.6667vw;
+  margin-top: 3.5185vh;
   color: white;
 
   .title {
@@ -76,9 +91,9 @@ export default {
     .back {
       display: inline-block;
       font-size: 5rem;
-      font-weight: 500;
-      margin: 5.3333vw 0 0 12vw;
-      letter-spacing: 0.5rem;
+      font-weight: 600;
+      margin: 3vh 0 0 12vw;
+      letter-spacing: 0.2rem;
     }
   }
 
@@ -90,22 +105,36 @@ export default {
     ul {
       li {
         display: inline-block;
-        margin-right: 1.5vw;
-        font-size: 3rem;
+        margin-right: 1.2vw;
+        a {
+          color: white;
+          font-size: 3.2rem;
+        }
       }
     }
     .indicator {
       transition: all 0.3s;
-      margin-top: 0.5vh;
+      margin-top: 1vh;
       height: 0.3vh;
       width: 0;
       background: white;
       position: absolute;
+      border-radius: 1vw;
     }
   }
 }
 .content {
-  margin: 3vh 3vw;
-  border:black 1px solid;
+  // width:88vw;
+  // height: 80vh;
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  main {
+    width: 88vw;
+    height: 80vh;
+    background:white;
+    box-shadow: 1vw 1vw 0.5vw .5vw rgba(0, 0, 0, .8)
+  }
 }
 </style>
