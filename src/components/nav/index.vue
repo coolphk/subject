@@ -14,7 +14,11 @@
             @click="changeActive"
           >{{ item }}</li>
         </ul>
-        <div ref="indicator" class="indicator" :style="{width:inWidth}"></div>
+        <div
+          ref="indicator"
+          class="indicator"
+          :style="indicator"
+        ></div>
       </div>
     </div>
     <div class="content"></div>
@@ -26,23 +30,27 @@ export default {
   name: "Navigator",
   data() {
     return {
-      startPos: 0, //初始时指示器的坐标
-      inWidth: 0,
+      indicator: {
+        left: this.initLeft, //初始时指示器的坐标
+        width: this.initWidth
+      },
+      initWidth: 0,
+      initLeft: 0,
       tabs: ["县情介绍", "生活馆介绍", "天气预报", "知识测试"]
     };
   },
   methods: {
     changeActive(e) {
-      //获取点击时的dom元素x轴坐标，并且减去开始时坐标，取得位移的距离
-      var range = e.target.offsetLeft - this.startPos;
-      this.$refs.indicator.style.transform = "translateX(" + range + "px)";
-      this.$refs.indicator.style.width = e.target.offsetWidth + "px";
+      this.setIndicator(e.target.offsetWidth,e.target.offsetLeft);
     },
     init() {
-      var width = document.getElementsByClassName("active")[0].clientWidth;
-      this.inWidth = width + "px";
-      //初始化指示器的坐标位置，以备点击选项卡按钮时使用
-      this.startPos = this.$refs.indicator.offsetLeft;
+      //初始化指示器的坐标位置
+      var firstTab = document.getElementsByClassName("active")[0];
+      this.setIndicator(firstTab.offsetWidth, firstTab.offsetLeft);
+    },
+    setIndicator(width, left) {
+      this.indicator.width = width + "px";
+      this.indicator.left = left + "px";
     }
   },
   mounted() {
@@ -56,7 +64,7 @@ export default {
   width: 100vw;
   height: 15.333vw;
   background: rgba(230, 39, 39, 0.171);
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px 3px rgba(114, 91, 91, 0.4);
   display: flex;
   margin-top: 0.6667vw;
   color: white;
@@ -98,5 +106,6 @@ export default {
 }
 .content {
   margin: 3vh 3vw;
+  border:black 1px solid;
 }
 </style>
