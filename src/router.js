@@ -14,20 +14,21 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: 'xianqing',
+          path: 'xianqing/:title',
           name: 'xianqing',
-          component: () => import('./components/tabs/xianqing.vue')
+          component: () => import('./components/tabs/xianqing.vue'),
+          props:true
         },
         {
-          path: "/shenghuo",
+          path: "shenghuo/:title",
           desc: "生活馆介绍"
         },
         {
-          path: "/weather",
+          path: "weather/:title",
           desc: "天气预报"
         },
         {
-          path: "/knowledge",
+          path: "knowledge/:title",
           desc: "知识测试"
         }
       ]

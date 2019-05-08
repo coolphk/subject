@@ -13,18 +13,15 @@
             @click="changeActive"
             :class="{activie:index==0}"
           >
-            <router-link :to="item.path"> {{ item.desc }}</router-link>
+            <router-link :to="item.path+'/'+item.desc">{{ item.desc }}</router-link>
           </li>
         </ul>
-        <div
-          class="indicator"
-          :style="indicator"
-        ></div>
+        <div class="indicator" :style="indicator"></div>
       </div>
     </div>
     <div class="content">
       <main>
-        <router-view />
+        <router-view/>
       </main>
     </div>
   </div>
@@ -42,7 +39,7 @@ export default {
       initWidth: 0,
       initLeft: 0,
       tabs: [
-        { path: "/xianqing", desc: "县情介绍" },
+        { path: "/xianqing", desc: "县情简介" },
         { path: "/shenghuo", desc: "生活馆介绍" },
         { path: "/weather", desc: "天气预报" },
         { path: "/knowledge", desc: "知识测试" }
@@ -75,8 +72,6 @@ export default {
   flex-direction: column;
 }
 .nav {
-  width: 100vw;
-  // height: 9vh;
   flex: 1;
   background: rgba(230, 39, 39, 0.171);
   box-shadow: 0 0 0.5vh 0.2vh rgba(114, 91, 91, 0.6);
@@ -133,8 +128,9 @@ export default {
   main {
     width: 88vw;
     height: 80vh;
-    background:rgba(255,255,255,0.8);
-    box-shadow: 1vw 1vw 0.5vw .5vw rgba(0, 0, 0, .8)
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1vw 1vw 0.5vw 0.5vw rgba(0, 0, 0, 0.8);
+    overflow: scroll;
   }
 }
 </style>
