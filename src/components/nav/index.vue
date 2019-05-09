@@ -16,12 +16,15 @@
             <router-link :to="item.path+'/'+item.desc">{{ item.desc }}</router-link>
           </li>
         </ul>
-        <div class="indicator" :style="indicator"></div>
+        <div
+          class="indicator"
+          :style="indicator"
+        ></div>
       </div>
     </div>
     <div class="content">
       <main>
-        <router-view/>
+        <router-view />
       </main>
     </div>
   </div>
@@ -130,7 +133,18 @@ export default {
     height: 80vh;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 1vw 1vw 0.5vw 0.5vw rgba(0, 0, 0, 0.8);
-    overflow: scroll;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      height: 1vw;
+      width: 1vw;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #fa6d6b;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: red;
+      border-radius: 20%;
+    }
   }
 }
 </style>
