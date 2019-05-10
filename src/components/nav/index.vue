@@ -131,7 +131,7 @@ export default {
   main {
     width: 88vw;
     height: 80vh;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255);
     box-shadow: 1vw 1vw 0.5vw 0.5vw rgba(0, 0, 0, 0.8);
     overflow-y: scroll;
     &::-webkit-scrollbar {
