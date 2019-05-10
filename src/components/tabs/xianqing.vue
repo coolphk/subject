@@ -54,8 +54,8 @@
         <div class="main-title">
           卢龙风光
         </div>
-        <div class="scene-content">
-          
+        <div class="scene-image">
+          <img v-for="item in 8" :key="item" :src="require(`@/assets/scene/0${item}.png`)" />
         </div>
       </div>
     </div>
@@ -131,11 +131,19 @@ export default {
   }
   .scene {
     display: flex;
-    .main-title {
-      margin-top: 0
-    }
+    flex-direction: column;
     .scene-title {
-      margin-top:4vh;
+      margin-top: 4vh;
+    }
+    .scene-image {
+      margin-top: 2vh;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 3px;
+      }
     }
   }
 }

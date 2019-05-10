@@ -18,10 +18,25 @@
 </head>
 
 <body>
-    <div>
-
-    </div>
-
+    <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+    </ul>
+    <script>
+        window.onload = function () {
+            var a = document.getElementsByTagName("li");
+            for (var i = 0; i < a.length; i++) {
+                a[i].addEventListener("click", (function (n) {
+                    return function () {
+                        alert(n)
+                    }
+                })(i)
+                );
+            }
+        }
+    </script>
 </body>
 
 </html>
