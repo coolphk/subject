@@ -12,6 +12,7 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+      redirect:'xianqing/县情简介',
       children: [
         {
           path: 'xianqing/:title',
@@ -20,8 +21,10 @@ export default new Router({
           props:true
         },
         {
-          path: "shenghuo/:title",
-          desc: "生活馆介绍"
+          path: "livehall/:title",
+          desc: "生活馆介绍",
+          component: () => import('./components/tabs/livehall.vue'),
+          props:true
         },
         {
           path: "weather/:title",

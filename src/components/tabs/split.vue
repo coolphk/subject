@@ -5,13 +5,12 @@
 </template>
 <script>
 export default {
-  name: "aaa"
+  name: "split"
 };
 </script>
 <style lang="less" scoped>
 @import url('../../assets/variable.less');
 .split {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 2vh 0;

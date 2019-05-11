@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title">{{ this.title }}</div>
+    <v-title :title="this.title"></v-title>
     <div class="content">
       <div class="main-title">卢龙县情简介</div>
       <ul>
@@ -147,10 +147,12 @@
 </template>
 
 <script>
+import VTitle from './title.vue';
 import VSplit from "./split.vue";
 export default {
   props: ["title"],
   components: {
+    VTitle,
     VSplit
   }
 };
@@ -158,22 +160,10 @@ export default {
 
 <style lang="less" scoped>
 @import url("../../assets/variable.less");
-.title {
-  box-sizing: border-box;
-  font-size: 5rem;
-  color: white;
-  height: 7vh;
-  line-height: 7vh;
-  padding-left: 5vw;
-  background: @pink;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
 
 .main-title {
   font-size: 3rem;
-  color: rgb(235, 26, 22);
+  color: @red;
   margin: 0 auto 2vh auto;
   text-align: center;
 }

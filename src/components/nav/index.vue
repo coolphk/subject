@@ -43,7 +43,7 @@ export default {
       initLeft: 0,
       tabs: [
         { path: "/xianqing", desc: "县情简介" },
-        { path: "/shenghuo", desc: "生活馆介绍" },
+        { path: "/livehall", desc: "生活馆介绍" },
         { path: "/weather", desc: "天气预报" },
         { path: "/knowledge", desc: "知识测试" }
       ]
