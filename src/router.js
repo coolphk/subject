@@ -28,7 +28,8 @@ export default new Router({
         },
         {
           path: "weather/:title",
-          desc: "天气预报"
+          desc: "天气预报",
+          component: () => import('./components/tabs/weather.vue')
         },
         {
           path: "knowledge/:title",

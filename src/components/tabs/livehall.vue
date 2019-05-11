@@ -146,11 +146,9 @@
 
 <script>
 import VTitle from "./title";
-import Split from "./split";
 export default {
   components: {
-    VTitle,
-    Split
+    VTitle
   },
   props: ["title"]
 };
