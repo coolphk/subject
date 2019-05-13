@@ -7,36 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        div {
-            width: 0;
-            height: 0;
+        .wrapper {
+            width: 400px;
+            height: 100px;
             border: 100px solid black;
-            border-top-color: transparent;
-            border-right-color: transparent;
+            position: relative;
+        }
+        .item {
+            width:400px;
+            height:100px;
+            background:#fff;
+            float: left;
+            position: absolute;
         }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-    </ul>
-    <script>
-        window.onload = function () {
-            var a = document.getElementsByTagName("li");
-            for (var i = 0; i < a.length; i++) {
-                a[i].addEventListener("click", (function (n) {
-                    return function () {
-                        alert(n)
-                    }
-                })(i)
-                );
-            }
-        }
-    </script>
+    <div class="wrapper">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
 </body>
 
 </html>

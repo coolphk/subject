@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <iframe
-      id="weather"
-      src="https://apip.weatherdt.com/h5.html?id=WA4qyG3njy"
-      frameborder="0"
-      width="100%"
-    ></iframe>
-  </div>
+  <iframe
+    id="weather"
+    src="https://apip.weatherdt.com/h5.html?id=WA4qyG3njy"
+    frameborder="0"
+    width="100%"
+  ></iframe>
 </template>
 
 <script>

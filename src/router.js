@@ -33,7 +33,9 @@ export default new Router({
         },
         {
           path: "knowledge/:title",
-          desc: "知识测试"
+          desc: "知识测试",
+          props:true,
+          component: () => import('./components/tabs/answer.vue')
         }
       ]
     }
