@@ -2,8 +2,10 @@
   <div class="answer-wrapper">
     <v-title :title="this.title"></v-title>
     <div class="question-wrapper">
-      <div class="question-content">
-        <div v-for="item in 10" :key="item" class="number">第{{item}}题</div>
+      <div
+        class="question-content">
+        <!-- <div class="number">第{{item}}题</div> -->
+        <div class="number">第1题</div>
       </div>
     </div>
   </div>
@@ -29,14 +31,17 @@ export default {
     flex: 1;
     .question-content {
       height: 4vh;
-      overflow: hidden;
       .number {
-        float: left;
-        width: 800px;
+        margin:4vh auto 0 auto;
+        width: 60%;
         text-align: center;
         background: #ccc;
         border-radius: 5px;
         font-size: 5rem;
+      }
+      .question-title {
+        text-indent: 2rem;
+        
       }
     }
   }
