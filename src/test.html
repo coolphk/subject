@@ -7,35 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .wrapper {
-            width: 400px;
-            height: 100px;
-            border: 100px solid black;
-            position: relative;
+        /* 单选样式开始 */
+        .a-radio {
+          display: none;
         }
-        .item {
-            width:400px;
-            height:100px;
-            background:#fff;
-            float: left;
-            position: absolute;
+        .b-radio {
+          display: inline-block;
+          border: 1px solid red;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-right: 5px;
+          position: relative;
         }
+        .b-radio:before {
+          content: "";
+          font-size: 0;
+          width: 2rem;
+          height: 2rem;
+          background: red;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -1rem;
+          margin-top: -1rem;
+          border-radius: 50%;
+          display: none;
+        }
+        .a-radio:checked ~ .b-radio:before {
+          display: block;
+        }
+        /* 单选样式结束 */
     </style>
 </head>
 
-<body>
-    <div class="wrapper">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-    </div>
+<body>    
+    <label>
+        <input type="radio" class="a-radio">
+        <span class="b-radio"></span>好
+    </label>
 </body>
 
 </html>

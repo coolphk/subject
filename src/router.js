@@ -5,26 +5,24 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: Home,
-      redirect:'xianqing/县情简介',
-      children: [
-        {
+      redirect: 'xianqing/县情简介',
+      children: [{
           path: 'xianqing/:title',
           name: 'xianqing',
           component: () => import('./components/tabs/xianqing.vue'),
-          props:true
+          props: true
         },
         {
           path: "livehall/:title",
           desc: "生活馆介绍",
           component: () => import('./components/tabs/livehall.vue'),
-          props:true
+          props: true
         },
         {
           path: "weather/:title",
@@ -34,8 +32,13 @@ export default new Router({
         {
           path: "knowledge/:title",
           desc: "知识测试",
-          props:true,
+          props: true,
           component: () => import('./components/tabs/answer.vue')
+        },
+        {
+          path: 'front/showanswer',
+          name: 'showanswer',
+          component: () => import('./components/tabs/showanswer.vue')
         }
       ]
     }

@@ -1,5 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
 
 function resolve(dir) {
     return path.join(__dirname, dir)
@@ -14,5 +13,18 @@ module.exports = {
             .set('@views', resolve('src/views'))
             .set('@layout', resolve('src/layout'))
             .set('@static', resolve('src/static'))
+    },
+    publicPath:'/ruoyi-admin',
+    devServer: {
+        proxy: { //配置跨域
+            '/ruoyi-admin': {
+                target: 'http://219.235.6.206:8080/', //这里后台的地址模拟的;应该填写你们真实的后台接口
+                ws: true,
+                changOrigin: true, //允许跨域
+                // pathRewrite: {
+                //     '^/api': 'ruoyi-admin/' //请求的时候使用这个api就可以
+                // }
+            }
+        }
     }
 }

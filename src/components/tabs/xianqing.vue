@@ -79,7 +79,7 @@
         </li>
       </ul>
       <div style="text-align:center">
-        <img src="@/assets/scene/timg.png" style="margin:auto" alt>
+        <img src="@/assets/scene/timg.png" style="margin:auto;width:60%" alt>
       </div>
       <v-split/>
       <div class="main-title">红色记忆</div>
@@ -178,8 +178,8 @@ export default {
   padding: 2vh 3rem;
   li {
     list-style: none;
-    margin-bottom: 1vh;
-    line-height: 4.5rem;
+    margin-bottom: 1rem;
+    line-height: 4vh;
     .first-sentence {
       color: @pink;
     }

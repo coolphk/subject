@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <!-- <div class="container">
     <div class="nav">
       <div class="title">
         <span class="back">返回首页</span>
@@ -19,12 +19,13 @@
         <div class="indicator" :style="indicator"></div>
       </div>
     </div>
-    <div class="content">
+    
+  </div> -->
+  <div class="content">
       <main>
         <router-view/>
       </main>
     </div>
-  </div>
 </template>
 
 <script>
@@ -46,7 +47,7 @@ export default {
       ]
     };
   },
-  methods: {
+  /* methods: {
     changeActive(e) {
       this.setIndicator(e.target.offsetWidth, e.target.offsetLeft);
     },
@@ -62,7 +63,7 @@ export default {
   },
   mounted() {
     this.init();
-  }
+  } */
 };
 </script>
 
@@ -124,23 +125,16 @@ export default {
   justify-content: center;
   align-items: center;
   main {
-    width: 88vw;
-    height: 80vh;
+    // width: 88vw;
+    // height: 80vh;
+    width: 100vw;
+    height: 100vh;
     background: rgb(255, 255, 255);
     box-shadow: 1vw 1vw 0.5vw 0.5vw rgba(0, 0, 0, 0.8);
     overflow-y: scroll;
     &::-webkit-scrollbar {
-      // height: 1vw;
-      // width: 1vw;
       width: 0;
     }
-    /* &::-webkit-scrollbar-track {
-      background-color: #fa6d6b;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: red;
-      border-radius: 20%;
-    } */
   }
 }
 </style>

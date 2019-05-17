@@ -28,7 +28,7 @@
       <hr>
       <div class="item-title">精神鼓舞</div>
       <div class="content">
-        在中国共产党近百年的风雨历程中，形成了以开天辟地、
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在中国共产党近百年的风雨历程中，形成了以开天辟地、
         敢为人先的红船精神，为了人民的解放事业敢于抛头颅洒热血
         的井冈山精神等为代表的十大精神，他们是实现中华民族伟大
         复兴的强大精神力量和宝贵精神财富。
@@ -39,7 +39,7 @@
       <hr>
       <div class="item-title">筑梦中国</div>
       <div class="content">
-        充分发挥党史以史鉴今、资政育人的作用，用党的伟大成
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;充分发挥党史以史鉴今、资政育人的作用，用党的伟大成
         就激励人，用党的优良传统教育人，用党的成功经验启迪人，
         用党的历史教训警示人，教育引导党员树牢“四个意识”、坚
         定“四个自信”、坚决做到“两个维护”，在新时代沿海强县
@@ -51,7 +51,7 @@
       <hr>
       <div class="item-title">逐梦卢龙</div>
       <div class="content">
-        二楼展厅集中展示卢龙县发展史，这座有着3600多年历
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二楼展厅集中展示卢龙县发展史，这座有着3600多年历
         史的文明古城，在县十三次党代会后，在县委的正确领导下，
         交出了一张张漂亮的“成绩单”，打开了卢龙跨越发展的新天
         地，谱写了新时代沿海强县、美丽卢龙新篇章。
@@ -62,7 +62,7 @@
       <hr>
       <div class="item-title">党性启迪</div>
       <div class="content">
-        通过重温入党誓词，增强党员教育的仪式感，引导党员时
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过重温入党誓词，增强党员教育的仪式感，引导党员时
         时刻刻不忘初心、牢记使命。
       </div>
       <div class="img">
@@ -71,7 +71,7 @@
       <hr>
       <div class="item-title">平语近人</div>
       <div class="content">
-        从习近平总书记系列重要讲话、文章、谈话中所引用的古
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从习近平总书记系列重要讲话、文章、谈话中所引用的古
         代典籍和经典名句中，遴选《一枝一叶总关情》等内容，通过
         诵读领袖经典，领略精髓要义，做到知行合一，推动习近平新
         时代中国特色社会主义思想在卢龙大地广泛传播。
@@ -79,14 +79,14 @@
       <hr>
       <div class="item-title">时代先锋</div>
       <div class="content">
-        先进典型身上诠释了坚定理想信念、为民实干担当、勤勉
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先进典型身上诠释了坚定理想信念、为民实干担当、勤勉
         敬业奉献的精神风采，激励引导广大党员对标先进、见贤思齐，
         奋发有为、扎实工作，新时代新担当新作为。
       </div>
       <hr>
       <div class="item-title">党规党纪</div>
       <div class="content">
-        以《中国共产党支部工作条例（试行）》为基础，明确“
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以《中国共产党支部工作条例（试行）》为基础，明确“
         三会一课”等要求，是新时代党支部建设的基本遵循。
       </div>
       <div class="img">
@@ -95,7 +95,7 @@
       <hr>
       <div class="item-title">孤竹清风</div>
       <div class="content">
-        “为民、务实、清廉、忠诚、干净、担当”是对党员干部
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“为民、务实、清廉、忠诚、干净、担当”是对党员干部
         的基本要求，需要每名党员干部都内化于心、外化于行。
       </div>
       <div class="img">
@@ -104,7 +104,7 @@
       <hr>
       <div class="item-title">党课讲堂</div>
       <div class="content">
-        围绕“仁义诚信、务实重行、艰苦奋斗、事争一流”新时
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;围绕“仁义诚信、务实重行、艰苦奋斗、事争一流”新时
         期卢龙精神开发“夷齐让国”精神、“一渠百库”精神、“抗
         战”精神三堂党课，让党员受教育、受启迪。
       </div>
@@ -114,14 +114,14 @@
       <hr>
       <div class="item-title">智慧党建</div>
       <div class="content">
-        结合党建实际工作，运用“互联网”+理念，打造集宣传、
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结合党建实际工作，运用“互联网”+理念，打造集宣传、
         学习、服务、公开、管理等于一体，实现县乡村互联互通，专
         注于党务管理的智慧党建平台。
       </div>
       <hr>
       <div class="item-title">代表驻室</div>
       <div class="content">
-        建立党代表工作室，每周固定时间开展代表接待日活动，
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建立党代表工作室，每周固定时间开展代表接待日活动，
         心贴心倾听民声，零距离服务群众。
       </div>
       <hr>
@@ -133,7 +133,7 @@
       <hr>
       <div class="item-title">红色书吧</div>
       <div class="content">
-        书吧由图书区、阅读区、展示区三个区域组成，其中图书区有党史、
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;书吧由图书区、阅读区、展示区三个区域组成，其中图书区有党史、
         文艺等书籍；阅读区配备红色桌椅；展示区的墙壁上宣传党建文化，
         营造温馨、惬意的阅读氛围，让党群众感受红色文化，传承革命精神。
       </div>
@@ -162,10 +162,13 @@ export default {
 .content {
   font-size: 3rem;
   margin-bottom: 2vh;
-  line-height: 4.5rem;
+  line-height: 4vh;
 }
 .img {
   text-align: center;
+  img {
+    width:100%;
+  }
 }
 hr {
   height: 2px;
