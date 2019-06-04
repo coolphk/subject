@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-title title="错题解析"></v-title>
+    <v-title title="答案展示"></v-title>
     <ul class="wrapper">
       <li v-for="(item,index) in this.$store.state.wrongAnswer" :key="index">
-        <div class="number">错题{{index+1}}</div>
+        <div class="number">题目{{index+1}}</div>
         <div class="question-title">{{item.questionTitle}}</div>
         <div
           class="answer"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-title :title="this.title"></v-title>
+    <v-title title="县情简介"></v-title>
     <div class="content">
       <div class="main-title">卢龙县情简介</div>
       <ul>
@@ -150,7 +150,7 @@
 import VTitle from './title.vue';
 import VSplit from "./split.vue";
 export default {
-  props: ["title"],
+  // props: ["title"],
   components: {
     VTitle,
     VSplit

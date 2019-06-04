@@ -11,28 +11,26 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
-      redirect: 'xianqing/县情简介',
+      redirect: 'xianqing/',
       children: [{
-          path: 'xianqing/:title',
+          path: 'xianqing/',
           name: 'xianqing',
           component: () => import('./components/tabs/xianqing.vue'),
-          props: true
+          // props: true
         },
         {
-          path: "livehall/:title",
+          path: "livehall/",
           desc: "生活馆介绍",
           component: () => import('./components/tabs/livehall.vue'),
-          props: true
         },
         {
-          path: "weather/:title",
+          path: "weather/",
           desc: "天气预报",
           component: () => import('./components/tabs/weather.vue')
         },
         {
-          path: "knowledge/:title",
+          path: "knowledge/",
           desc: "知识测试",
-          props: true,
           component: () => import('./components/tabs/answer.vue')
         },
         {

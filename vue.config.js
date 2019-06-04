@@ -18,7 +18,7 @@ module.exports = {
     devServer: {
         proxy: { //配置跨域
             '/ruoyi-admin': {
-                target: 'http://219.235.6.206:8080/', //这里后台的地址模拟的;应该填写你们真实的后台接口
+                target: 'http://localhost:8888/', //这里后台的地址模拟的;应该填写你们真实的后台接口
                 ws: true,
                 changOrigin: true, //允许跨域
                 // pathRewrite: {

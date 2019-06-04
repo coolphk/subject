@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-title :title="`卢龙党员${this.title}`"></v-title>
+    <v-title title="卢龙党员生活馆介绍"></v-title>
     <div class="wrapper">
       <div class="content">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卢龙党员组织生活馆占地面积2500平方米。建有精神鼓
@@ -149,8 +149,7 @@ import VTitle from "./title";
 export default {
   components: {
     VTitle
-  },
-  props: ["title"]
+  }
 };
 </script>
 

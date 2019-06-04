@@ -1,6 +1,6 @@
 <template>
   <div class="answer-wrapper">
-    <v-title :title="this.title"></v-title>
+    <v-title title="知识测试"></v-title>
     <div class="question-wrapper">
       <div class="slide" ref="slide" style="left:0">
         <div
@@ -29,8 +29,6 @@
             @click="next(index)"
             style="margin-top:4vh"
           >下一题</div>
-          <!-- <router-link to="/showanswer" class="number" v-else @click="showAnswer(value.questionId)" style="margin-top:4vh">查看答案</router-link>
-          -->
           <div class="number" v-else @click="showAnswer(index)" style="margin-top:4vh">查看答案</div>
         </div>
       </div>
@@ -42,7 +40,6 @@
 import VTitle from "./title.vue";
 import mixin from "@/mixin";
 export default {
-  props: ["title"],
   mixins: [mixin],
   data() {
     return {
@@ -60,8 +57,9 @@ export default {
         if (!this.isAnswer) {
         alert("请选择答案。");
       } else {
-        //判断是否是正确答案，如果答案错误将此题序号保存至store中
-        this.answer != this.questions[index].rightAnswer &&
+        //此处原来逻辑为：判断是否是正确答案，如果答案错误将此题序号保存至store中
+        //
+        // this.answer != this.questions[index].rightAnswer &&
           this.$store.commit("countWrong", this.questions[index]);
         let left = -(index + 1) * 100 + "vw";
         this.$refs.slide.style.left = left;
@@ -69,7 +67,7 @@ export default {
       }
     },
     showAnswer(index) {
-      this.answer != this.questions[index].rightAnswer &&
+      // this.answer != this.questions[index].rightAnswer &&
         this.$store.commit("countWrong", this.questions[index]);
       this.$router.push({ name: "showanswer" });
     }
