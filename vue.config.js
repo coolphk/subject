@@ -15,6 +15,7 @@ module.exports = {
             .set('@static', resolve('src/static'))
     },
     publicPath:'/ruoyi-admin',
+    // outputDir:'ruoyi-admin',
     devServer: {
         proxy: { //配置跨域
             '/ruoyi-admin': {
@@ -26,5 +27,6 @@ module.exports = {
                 // }
             }
         }
-    }
+    },
+    filenameHashing:false
 }
